@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="ReaderXmlModelStoreContainer" CdmEntityContainer="ReaderXmlEntities1">
+    <EntitySetMapping Name="Campos">
+      <EntityTypeMapping TypeName="ReaderXmlModel.Campos">
+        <MappingFragment StoreEntitySet="Campos">
+          <ScalarProperty Name="Xml" ColumnName="Xml" />
+          <ScalarProperty Name="infAdic" ColumnName="infAdic" />
+          <ScalarProperty Name="total" ColumnName="total" />
+          <ScalarProperty Name="CnpjDestinatario" ColumnName="CnpjDestinatario" />
+          <ScalarProperty Name="cnpjEmitente" ColumnName="cnpjEmitente" />
+          <ScalarProperty Name="chaveNfeCte" ColumnName="chaveNfeCte" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

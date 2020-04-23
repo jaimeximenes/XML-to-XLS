@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="ReaderXmlModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Campos">
+    <Key>
+      <PropertyRef Name="chaveNfeCte" />
+    </Key>
+    <Property Name="chaveNfeCte" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="cnpjEmitente" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="CnpjDestinatario" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="total" Type="varchar" MaxLength="50" />
+    <Property Name="infAdic" Type="varchar(max)" />
+    <Property Name="Xml" Type="varbinary(max)" />
+  </EntityType>
+  <EntityContainer Name="ReaderXmlModelStoreContainer">
+    <EntitySet Name="Campos" EntityType="Self.Campos" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>
